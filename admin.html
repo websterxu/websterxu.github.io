@@ -14,7 +14,9 @@
 <label>Section<select id="section"><option value="publications">Publications</option><option value="teaching">Teaching courses</option></select></label>
 <label>Entry<select id="entry"></select></label>
 <div id="fields"></div>
+<button id="delete" type="button" disabled>Delete selected entry</button>
 <button id="publish">Publish to GitHub Pages</button><button id="logout" type="button">Sign out</button>
 </form>
+<form id="new-section" hidden><h2>Create a section</h2><label>Section title<input id="new-title" required maxlength="80"></label><label>First entry<textarea id="new-entry" required maxlength="3000"></textarea></label><button>Create and publish section</button></form>
 <p id="status" role="status" aria-live="polite"></p>
-</main><script src="admin.js"></script></html>
+</main><script src="admin-v2.js"></script></html>
